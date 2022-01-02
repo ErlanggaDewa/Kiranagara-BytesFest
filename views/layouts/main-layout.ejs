@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- import alpinejs -->
+    <script defer src="/javascripts/alpine.min.js" type="module"></script>
+
+    <link rel="stylesheet" href="/stylesheets/tailwind.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+
+    <title>Kiranagara</title>
+  </head>
+  <body class="">
+    <div class="h-screen <%= navbar ? 'flex sm:p-4 sm:px-5 ' : '' %>">
+      <% if (navbar) { %> <%- include('../partials/navbar.ejs') -%> <% } %>
+
+      <!-- body from ejs layouts -->
+      <%- body %>
+    </div>
+  </body>
+</html>

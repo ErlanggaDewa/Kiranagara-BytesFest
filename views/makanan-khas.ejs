@@ -1,0 +1,757 @@
+<div class="h-full bg-white w-full overflow-y-auto">
+  <div
+    class="w-full h-20 sm:hidden flex justify-center items-center"
+    style="background-color: #d7e2e8"
+  >
+    <h1 class="text-green-700 uppercase font-medium text-2xl">Kiranagara</h1>
+  </div>
+  <div class="flex sm:py-2 px-6 my-4 sm:my-0" id="">
+    <input
+      type="text"
+      aria-label="What do you want to learn?"
+      placeholder="What do you want to learn?"
+      class="
+        w-full
+        bg-gray-100
+        text-sm text-black
+        placeholder-gray-500
+        border-gray-200
+        rounded-md
+        py-0
+        pl-3
+        sm:pl-10
+        border-2
+        focus:border-0
+        focus:border-light-blue-500
+        focus:outline-none
+        focus:ring-2
+        focus:ring-light-blue-500
+      "
+    />
+    <button
+      type="button"
+      class="
+        border-2 border-green-500
+        text-green-500
+        rounded-md
+        px-2
+        sm:px-4 sm:py-2
+        ml-2
+        sm:ml-10
+        transition
+        duration-500
+        ease
+        text-sm
+        sm:text-base
+        select-none
+        hover:text-white hover:bg-green-600
+        focus:outline-none focus:shadow-outline
+      "
+    >
+      Masuk
+    </button>
+    <button
+      type="button"
+      class="
+        border-2 border-blue-500
+        text-blue-500
+        rounded-md
+        py-1
+        sm:px-4 sm:py-2
+        px-2
+        ml-2
+        sm:mx-4
+        text-sm
+        sm:text-base
+        transition
+        duration-500
+        ease
+        select-none
+        hover:text-white hover:bg-blue-600
+        focus:outline-none focus:shadow-outline
+      "
+    >
+      <span>Daftar</span>
+    </button>
+  </div>
+  <div class="p-2 mt-5 px-6">
+    <div class="alat-musik" id="alat-musik">
+      <h1 class="text-green-800 text-xl font-medium uppercase sm:text-3xl">
+        Makanan Khas
+      </h1>
+      <hr class="mt-2 border-2 bg-green-800 border-green-800 w-1/2" />
+      <div
+        class="
+          mt-6
+          grid grid-cols-2
+          sm:grid-cols-3
+          md:grid-cols-4
+          lg:grid-cols-5
+          w-full
+          gap-5
+          pb-3
+        "
+      >
+        <!-- Timphan -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="/images/makanan_khas/Timphan.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Timphan
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="/images/makanan_khas/Timphan.jpg"
+                  alt=""
+                  class="
+                    lg:ml-3 lg:mr-10
+                    rounded-3xl
+                    lg:w-2/3
+                    p-5
+                    h-1/2
+                    lg:h-4/5
+                  "
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Timphan
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Timphan adalah kue wajib menjamu tamu di
+                    Aceh. Hampir semua rumah di Aceh menyajikan makanan itu pada
+                    hari raya. Bahkan anggota keluarga yang pulang mudik ke
+                    rumah orang tuanya, menuntut kue itu jauh-jauh hari.
+                    <br />
+                    <br />
+                    &emsp;&emsp;&emsp;Kue itu bisa tahan sepekan. Kue itu
+                    berbentuk pipih lonjong dengan berbungkus daun pisang muda,
+                    seukuran dua atau tiga kali ukuran jari orang dewasa.
+                    Timphan lembek dengan bahan utama tepung dan pisang serta
+                    isi dalamnya kelapa plus gula ataupun srikaya. Isi dalamnya
+                    tergantung selera. Srikaya dibuat dari telur, santan, tepung
+                    terigu, gula dan nangka cincang halus. Bahan ini perlu
+                    dimasak terlebih dahulu sebelum menjadi bagian dalam
+                    timphan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gado Gado -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="/images/makanan_khas/Gado Gado.png"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Gado Gado
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="/images/makanan_khas/Gado Gado.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 p-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Gado Gado
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Gado - Gado makanan khas Jakarta. Bahannya
+                    terdiri dari bermacam - macam sayuran seperti bayam,
+                    kangkung, daun singkong, taoge, nangka, kacang panjang,
+                    timun dan daun pare, kadang pakai jagung rebus. Bumbunya
+                    adalah kacang tanah yang telah digoreng ditumbuk pakai bumbu
+                    cabe, garam, terasi, kencur, bawang putih, asam muda, gula
+                    semuanya diulek dicampur air sedikit hingga menjadi kuah
+                    untuk dicampur dengan sayuran rebus. Gado gado itu di
+                    atasnya ditambahkan bawang goreng dan kerupuk, ada juga yang
+                    menyantapnya dengan ketupat lontong atau nasi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ketoprak -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="/images/makanan_khas/ketoprak.png"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Ketoprak
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="/images/makanan_khas/ketoprak.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 p-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Ketoprak
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Ketoprak merupakan nama salah satu jenis
+                    makanan khas daerah Jakarta. Bahan-bahan untuk membuatnya
+                    antara lain tahu digoreng, ketupat, tauge, mihun, kecap, dan
+                    bawang goreng. Semua bahan tersebut dijadikan satu dan
+                    ditata dalam piring atau mangkok, kemudian disiram dengan
+                    sambal kacang, ditambah kecap dan kemudian ditaburi bawang
+                    goreng di atasnya.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tahu Gejrot -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="/images/makanan_khas/Tahu Gejrot.png"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Tahu Gejrot
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="/images/makanan_khas/Tahu Gejrot.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Tahu Gejrot
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Salah satu makanan khas Cirebon adalah
+                    tahu gejrot, seperti namanya makanan ini berbahan utama
+                    tahu. Namun, jenis tahu yang disajikan pada racikan ini
+                    memiliki kekhasan tersendiri. Tahu matang berongga dengan
+                    kulit tahu yang renyah dan daging tahu yang tipis menepel
+                    pada kulitnya membuat keunikan tekstur tahu yang berbeda
+                    dengan jenis tahu lainnya di Indonesia.
+                    <br />
+                    <br />
+                    &emsp;&emsp;&emsp;Tahu ini disajikan dengan kuah manis gula
+                    merah yang dicampur dengan tumbukan bawang merah mentah dan
+                    cabe rawit sehingga rasa pedas manis menjadi kekhasan rasa
+                    tahu ini. Semakin unik karena Tahu Gejrot ini disajikan
+                    diatas piring tembikar sehingga nuansa tradisionalnya
+                    semakin menambah cita rasa Cirebon. Biasanya, makanan ini
+                    banyak dijajakan oleh pedagang pada siang hari di pusat -
+                    pusat keramaian kota.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nasi Brongkos -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="/images/makanan_khas/Nasi Brongkos.png"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Nasi Brongkos
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="/images/makanan_khas/Nasi Brongkos.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Nasi Brongkos
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Nasi Brongkos merupakan masakan khas dari
+                    Kabupaten Demak. Nasi brongkos adalah masakan yang menjadi
+                    santapan pagi alias untuk sarapan. Sedangkan, jika anda
+                    ingin membuatnya sendiri berikut bahan bahan untuk membuat
+                    nasi brongkos adalah buah kentang, buncis, kacang merah,
+                    santan, serai, jahe, lengkuas, daun salam, minyak goreng,
+                    garam. Sedangkan, bumbunya terbuat dari nangka muda, bawang
+                    putih, bawang merah, asam jawa, gula.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rawon -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="/images/makanan_khas/Rawon.png"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">Rawon</h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="/images/makanan_khas/Rawon.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Rawon
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Rawon atau nasi rawon (karena selalu
+                    disajikan dengan nasi) adalah menu berupa sup daging dengan
+                    bumbu berwarna hitam karena mengandung kluwek. Meski dikenal
+                    sebagai masakan khas Jawa Timur seperti Surabaya,
+                    Probolinggo Lamongan, dan Pasuruan, dikenal pula oleh
+                    masyarakat Jawa Tengah sebelah timur (daerah Surakarta).
+                    <br />
+                    <br />
+                    &emsp;&emsp;&emsp;Daging untuk rawon umumnya adalah daging
+                    sapi yang dipotong kecil - kecil. Bumbu supnya sangat khas
+                    Indonesia, yaitu campuran bawang merah, bawang putih,
+                    lengkuas (laos), ketumbar, serai, kunir, cabai, kluwek,
+                    garam, serta minyak nabati. Semua bahan ini (kecuali serai
+                    dan lengkuas) dihaluskan, lalu ditumis sampai harum.
+                    Campuran bumbu ini kemudian dimasukkan dalam kaldu rebusan
+                    daging bersama dengan daging.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

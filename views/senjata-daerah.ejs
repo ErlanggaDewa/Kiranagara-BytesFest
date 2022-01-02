@@ -1,0 +1,676 @@
+<div class="h-full bg-white w-full overflow-y-auto">
+  <div
+    class="w-full h-20 sm:hidden flex justify-center items-center"
+    style="background-color: #d7e2e8"
+  >
+    <h1 class="text-green-700 uppercase font-medium text-2xl">Kiranagara</h1>
+  </div>
+  <div class="flex sm:py-2 px-6 my-4 sm:my-0" id="">
+    <input
+      type="text"
+      aria-label="What do you want to learn?"
+      placeholder="What do you want to learn?"
+      class="
+        w-full
+        bg-gray-100
+        text-sm text-black
+        placeholder-gray-500
+        border-gray-200
+        rounded-md
+        py-0
+        pl-3
+        sm:pl-10
+        border-2
+        focus:border-0
+        focus:border-light-blue-500
+        focus:outline-none
+        focus:ring-2
+        focus:ring-light-blue-500
+      "
+    />
+    <button
+      type="button"
+      class="
+        border-2 border-green-500
+        text-green-500
+        rounded-md
+        px-2
+        sm:px-4 sm:py-2
+        ml-2
+        sm:ml-10
+        transition
+        duration-500
+        ease
+        text-sm
+        sm:text-base
+        select-none
+        hover:text-white hover:bg-green-600
+        focus:outline-none focus:shadow-outline
+      "
+    >
+      Masuk
+    </button>
+    <button
+      type="button"
+      class="
+        border-2 border-blue-500
+        text-blue-500
+        rounded-md
+        py-1
+        sm:px-4 sm:py-2
+        px-2
+        ml-2
+        sm:mx-4
+        text-sm
+        sm:text-base
+        transition
+        duration-500
+        ease
+        select-none
+        hover:text-white hover:bg-blue-600
+        focus:outline-none focus:shadow-outline
+      "
+    >
+      <span>Daftar</span>
+    </button>
+  </div>
+  <div class="p-2 mt-5 px-6">
+    <div class="alat-musik" id="alat-musik">
+      <h1 class="text-green-800 text-xl font-medium uppercase sm:text-3xl">
+        Senjata Daerah
+      </h1>
+      <hr class="mt-2 border-2 bg-green-800 border-green-800 w-1/2" />
+      <div
+        class="
+          mt-6
+          grid grid-cols-2
+          sm:grid-cols-3
+          md:grid-cols-4
+          lg:grid-cols-5
+          w-full
+          gap-5
+          pb-3
+        "
+      >
+        <!-- Golok -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/senjata/Golok.png"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">Golok</h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/senjata/Golok.png"
+                  alt=""
+                  class="
+                    lg:ml-3 lg:mr-10
+                    rounded-3xl
+                    lg:w-2/3
+                    p-5
+                    h-1/2
+                    lg:h-4/5
+                  "
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Golok
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Golok merupakan salah satu senjata
+                    tradisional masyarakat Betawi, yang digunakan dalam
+                    kehidupan sehari - hari dan sudah menyatu dalam kehidupan
+                    mereka. Setiap keluarga Betawi pasti memilikinya, bahkan
+                    setiap lelaki pada zaman dahulu selalu membawanya kemanapun
+                    mereka pergi. Namun karena perkembangan zaman serta
+                    teknologi sehingga golok sudah dianggap tidak praktis lagi
+                    dan mulai jarang ditemukan masyarakat Betawi yang
+                    memilikinya, kecuali yang masih populer golok gablongan
+                    (golok kerja). Walaupun secara fisik golok tidak lagi
+                    menyertai ke mana seorang lak-laki pergi, namun berbagai
+                    kesenian yang tumbuh di kalangan orang Betawi, terutama
+                    lenong selalu menampilkan tokoh - tokoh yang menyelipkan
+                    golok sebagai senjata andalan, bahkan ada beberapa pantun
+                    yang diciptakan berkaitan dengan golok.
+                    <br />
+                    <br />
+                    &emsp;&emsp;&emsp; Golok dalam masyarakat Betawi dibedakan
+                    ke dalam dua kategori, yakni golok kerja (gablongan bendo
+                    atau golok dapur) digunakan untuk keperluan rumah tangga.
+                    Kedua golok simpenan (sorenan) ini dibedakan lagi menjadi
+                    dua yakni sorenan simpenan untuk memotong hewan dan sorenan
+                    pinggang. Ada juga yang berbentuk trapesium. Gagangnya
+                    terbuat dari kayu yang keras seperti kayu jambu atau gading
+                    dan ada juga dari tulang hewan. Badannya terbuat dari besi
+                    bekas "Per" kendaraan bermotor (truk). Sarungnya juga
+                    terbuat dari kayu yang kuat dan kemudian dirapatkan dengan
+                    tali.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kujang -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/senjata/Kujang.png"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Kujang
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/senjata/Kujang.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 p-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Kujang
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Kujang adalah senjata tradisional yang
+                    dekat hubungannya dengan kehidupan masyarakat Jawa Barat
+                    yang agraris. Secara etimologi, Kujang berasal dari kata
+                    “Kudi” yang artinya sebuah senjata atau jimat yang memiliki
+                    kekuatan gaib dan “Hyang" berarti dewa atau kuasa.
+                    <br />
+                    <br />
+                    &emsp;&emsp;&emsp;Berdasarkan bentuknya, Kujang memiliki 6
+                    jenis yang berbeda yaitu Kujang Ciung, Kujang Kuntul, Kujang
+                    Jago, Kujang Bangkong, Kujang Badak, dan Kujang Naga.
+                    Seiring perkembangan zaman, Kujang kini menjadi senjata
+                    pusaka yang menjadi simbol prestise dari pemiliknya.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Keris -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/senjata/Keris.png"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">Keris</h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/senjata/Keris.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 p-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Keris
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Keris terdaftar sebagai warisan budaya tak
+                    benda dari Indonesia oleh UNESCO pada tahun 2008. Keris
+                    yaitu sebuah belati asimetris berasal dari negara Indonesia.
+                    Baik senjata maupun benda spiritual, keris dianggap memiliki
+                    kekuatan magis. Keris yang paling pertama diketahui berasal
+                    dari abad kesepuluh dan kemungkinan besar telah menyeluruh
+                    dari pulau Jawa dan beredar di wilayah Asia Tenggara. Bilah
+                    keris biasanya sempit dengan alas yang lebar dan asimetris.
+                    Sarungnya biasa dibuat dari kayu, walaupun contoh dari
+                    gading, bahkan emas. Nilai estetika keris terdiri dhapur
+                    (bentuk dan desain bilahnya, dengan 40 varian), pamor (pola
+                    hiasan paduan logam pada bilahnya, dengan kurang lebih 120
+                    varian), dan tangguh yang mengacu pada usia dan asal.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rencong -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/senjata/Rencong.png"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Rencong
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/senjata/Rencong.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Rencong
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Rencong adalah senjata pusaka bagi rakyat
+                    Aceh dan merupakan simbol keberanian, keperkasaan,
+                    pertahanan diri dan kepahlawanan aceh dari abad ke abad.
+                    Menurut salah satu sumber rencong telah dikenal pada awal
+                    Islam Kesultanan di abad ke-13.
+                    <br />
+                    <br />
+                    &emsp;&emsp;&emsp;Di zaman Kerajaan Aceh Darussalam rencong
+                    ini tidak pernah lepas dari hampir setiap pinggang (selalu
+                    diselipkan di pinggang depan) rakyat Aceh yang rata-rata
+                    punya keberanian luar biasa baik pria maupun wanita karena
+                    rencong ini bagi orang Aceh ibarat tentara dengan bedilnya
+                    yang merupakan simbol keberanian, kebesaran, ketinggian
+                    martabat dan keperkasaan orang Aceh sehingga, orang-orang
+                    portugis atau portugal harus berpikir panjang untuk
+                    mendekati orang Aceh. Di masa ini Rencong mempunyai
+                    tingkatan yang menjadi ciri khas strata masyarakat, untuk
+                    seorang Raja atau Sultan dan Ratu atau Sultanah untuk
+                    sarungnya terbuat dari gading dan untuk belatinya terbuat
+                    dari emas hingga sampai ke strata masyarakat bawah untuk
+                    sarung terbuat dari dari tanduk kerbau ataupun kayu dan
+                    untuk belati terbuat dari kuningan atau besi putih
+                    tergantung kemampuan ekonomi masing - masing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parang Salawaku -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/senjata/Parang Salawaku.png"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Parang Salawaku
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/senjata/Parang Salawaku.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Parang Salawaku
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Parang Salawaku adalah sepasang senjata
+                    tradisional dari Maluku. Parang Salawaku terdiri dari parang
+                    (pisau Panjang) dan salawaku ( perisai ) yang pada masa lalu
+                    adalah senjata yang digunakan untuk berperang. Bagi
+                    masyarakat Maluku, parang dan salawaku adalah simbol
+                    kemerdekaan rakyat.
+                    <br />
+                    <br />
+                    &emsp;&emsp;&emsp;Senjata ini dapat disaksikan pada saat
+                    tarian cakalele yaitu tarian yang menyimbolkan kekuatan kaum
+                    pria Maluku. Parang ditangan kanan penari melambangkan
+                    keberanian sementara salawaku di tangan kiri melambangkan
+                    perjuangan untuk mendapatkan keadilan. Bukan sekedar simbol
+                    masyarakat Maluku, parang dan salawaku juga telah dibuat
+                    produk ekraf khas Maluku.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
